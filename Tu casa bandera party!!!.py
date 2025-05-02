@@ -25,3 +25,9 @@ while True:
         print("bloqueo")
     if posR == 151:
         print("bloqueo")
+    if posR == 166:
+        print("bloqueo")
+    if posR == 70:
+        print("bloqueo")
+    if posR == 50:
+        print("bloqueo")
