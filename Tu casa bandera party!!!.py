@@ -31,3 +31,4 @@ while True:
         print("bloqueo")
     if posR == 50:
         print("bloqueo")
+        #
