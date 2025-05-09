@@ -5,8 +5,7 @@ posB = 50
 while True:
     if(posR>=196):
        posR=50
-    
-    if(posB >=196):
+    if(posB >=1000):
        break
     
     dado= random.randint (1,6)
@@ -18,7 +17,7 @@ while True:
     dado2 = random.randint (1,6)
     DadoT = dado + dado2
     posB += DadoT
-    print(f"A:{posR} B:{posB}")
+    print (f"A:{posR} B:{posB}")
 
 
     if posR == 12:
@@ -29,6 +28,16 @@ while True:
         print("bloqueo")
     if posR == 70:
         print("bloqueo")
-    if posR == 50:
+    if posR == 38:
         print("bloqueo")
-        #
+    if posR >= 196:
+        posR = 50+(posR-196)
+
+    if posR==151:
+        print =input("Seguir adelande o cambiar de dirección")
+    if (posR == "Seguir adelante"):
+        posR+0
+    if (posR == "Cambiar de dirección"):
+        posR-134 and posB-134
+    
+        
