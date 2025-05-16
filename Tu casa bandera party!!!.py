@@ -36,12 +36,12 @@ while True:
     if posR >= 196:
         posR = 50+(posR-196)
 
-    if posR==151:
+    if(posR>150 and posR<=162):
         direc =input("Seguir adelande o cambiar de dirección")
         if (direc == "S" or direc == "Seguir adelante"):
             pass
         if (direc == "N" or direc == "Cambiar de dirección"):
-            posR=17
-            print (f"A:{17} B:{20}")
+            posR = (posR-151)+16
+            print (f"A:{posR} B:{posB}")
 
 
