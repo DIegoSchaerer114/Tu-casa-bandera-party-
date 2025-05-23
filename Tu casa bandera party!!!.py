@@ -44,4 +44,26 @@ while True:
             posR = (posR-151)+16
             print (f"A:{posR} B:{posB}")
 
+    if(posR>96 and posR<=109):
+        direc =input("Seguir adelande o cambiar de dirección")
+        if (direc == "S" or direc == "Seguir adelante"):
+            pass
+        if (direc == "N" or direc == "Cambiar de dirección"):
+            posR = (posR-97)+16
+            print (f"A:{posR} B:{posB}")
 
+    if(posR>166 and posR<=178):
+        direc =input("Seguir adelande o cambiar de dirección")
+        if (direc == "S" or direc == "Seguir adelante"):
+            pass
+        if (direc == "N" or direc == "Cambiar de dirección"):
+            posR = (posR-167)+44
+            print (f"A:{posR} B:{posB}")
+    
+    if(posR>79 and posR<=92):
+        direc =input("Seguir adelande o cambiar de dirección")
+        if (direc == "S" or direc == "Seguir adelante"):
+            pass
+        if (direc == "N" or direc == "Cambiar de dirección"):
+            posR = (posR-80)+44
+            print (f"A:{posR} B:{posB}")
