@@ -2,6 +2,18 @@ import random
 import imaplib
 posR = 1
 posB = 50
+#Bandera posicion rojo
+BP=[1, 176]
+#BAndera posicion Azul
+BB=[50, 100]
+#Puntos de bandera roja
+PR = 0
+#Puntos de bandera Blue
+PB = 0
+
+ubr=BB[0]
+#Ubi de bandera Blue
+ubb=BP[0]
 
 #El dado
 def tirarDados():
@@ -9,6 +21,7 @@ def tirarDados():
     dado2 = random.randint (1,6)
     DadoT = dado + dado2   
     return DadoT
+
 
 while True:  
 
@@ -23,8 +36,19 @@ while True:
 
     
     print(f"A:{posR} B:{posB}")
+    print(f"puntos de A:{PR} puntos de B:{PB}")
        
     #Se utiliza para bloquear lugares que no se puede acceder tan facilmente
+    if posR == ubb:
+        PR+=1
+        ubb=BB[1]
+    if posB == ubr:
+        PB+=1
+        ubr=BP[1]
+
+    if PB>4 or PR>4:
+        break
+
     if posR == 12:
         print("bloqueo")
     if posR == 166:
